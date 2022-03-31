@@ -355,7 +355,7 @@ nav {
   transition: all 300ms ease-in-out;
 
   &.fixed {
-    background-color: rgba(36, 4, 17, .88);
+    background-color: transparentize($fixed-bg, 0.12);
       .container {
         border-bottom: none;
         padding: 10px 0;
@@ -395,7 +395,7 @@ nav {
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: $accent-color-hover;
         }
       }
       &:last-child a {
