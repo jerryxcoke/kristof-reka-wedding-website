@@ -321,7 +321,7 @@ Hero
 .location-card {
   height: 400px;
   overflow: hidden;
-  background-image: url("../../img/bagoly.png");
+  background-image: url("../../img/helyszin_kep.jpg");
   animation: location-animation 30s infinite;
   background-position: 10% 80%;
   background-size: 200vh;
@@ -458,15 +458,12 @@ Intro
   width: 80%;
 }
 
-#intro {
+#invitation {
   padding-top: 40px;
   img {
     width: 100%;
     height: auto;
   }
-}
-#intro p {
-  text-align: center;
 }
 
 /* ==========================================================================
