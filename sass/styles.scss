@@ -322,8 +322,8 @@ Hero
   height: 400px;
   overflow: hidden;
   background-image: url("../../img/helyszin_kep.jpg");
-  animation: location-animation 30s infinite;
-  background-position: 10% 80%;
+  animation: location-animation 60s cubic-bezier(0.45, 0.05, 0.55, 0.95)  infinite;
+  background-position: bottom center;
   background-size: 200vh;
 }
 
@@ -343,12 +343,25 @@ Hero
 }
 
 @keyframes location-animation {
-  0% {background-position: 10% 80%};
-  20% {background-position: 100% 40%;}
-  40% {background-position: center;}
-  60% {background-position: center left;}
-  90% {background-position: bottom right;}
-  100% {background-position: 10% 80%;}
+  0% {
+    background-position: bottom center;
+  }
+  
+  25% {
+    background-position: 100% 60%;
+  }
+
+  50% {
+    background-position: 50% 15%;
+  }
+  
+  75% {
+    background-position: 0% 60%;
+  }
+  
+  100% {
+    background-position: bottom center;
+  }
 }
 
 nav {
