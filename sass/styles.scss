@@ -473,10 +473,6 @@ Intro
 
 #invitation {
   padding-top: 40px;
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 /* ==========================================================================
@@ -726,12 +722,15 @@ house
   }
 }
 
-//music section
-.music-section {
-  padding: 120px 0;
-  h3 {
-    padding-bottom: 40px;
+#poem {
+  img {
+    width: 100%;
+    height: auto;
   }
+}
+
+.poem-section {
+  padding: 18rem 0;
 }
 
 /* ==========================================================================

@@ -19,6 +19,10 @@
     .navbar-toggler, .logo {
         margin: 0 20px;
     }
+
+    nav ul.primary-nav li a {
+        padding: 0;
+    }
 }
 
 /* Responsive nav kicks in */
@@ -41,6 +45,7 @@
         -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
         transition: opacity 0.5s, visibility 0s 0.5s;
     } */
+
 
     ul.member-actions {
         position: static;
@@ -284,8 +289,11 @@
     }
 }
 
-@media screen and (max-width: 765px) {
-
+@media screen and (max-width: 767px) {
+    
+    .poem-section {
+        padding: 14rem 0;   
+    }
 
 }
 
@@ -389,6 +397,17 @@
 
     .down-arrow {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .poem-section {
+        padding: 5rem 0;    
+    }
+
+    #poem img {
+        width: 50%;
     }
 
 }
