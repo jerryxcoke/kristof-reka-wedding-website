@@ -151,7 +151,7 @@ $(document).ready(function () {
         if (!invitationCode.includes(MD5($(e.target).find('[name=invite_code]').val()))) {
             $('.alert-wrapper').html(alert_markup('danger', '<strong>Bocsi!</strong> Nem jó a meghívó kód.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbxMz6EF68VTfYBEkqP4QL_aathIpNbRDiIGBxggnqIiV2OQPBuJzxrknDXaPE6bt3YRFQ/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxFiixK9oQ6lAsJmjIyfdrvTIHmPw821u192TXuNB-TngqgXmIP/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -185,6 +185,15 @@ $(document).ready(function () {
     $('#has_kid_no').on('input', function(ev) {
        $('#kids').addClass('d-none'); 
     });
+
+    $('#partner_yes').on('input', function(ev) {
+        $('#partner_name_block').removeClass('d-none');
+     });
+ 
+     $('#partner_no').on('input', function(ev) {
+        $('#partner_name_block').addClass('d-none'); 
+     });
+ 
 
     $('#room_has_kid_yes').on('input', function(ev) {
         $('#room_kids').removeClass('d-none');
