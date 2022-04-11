@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    var invitationCode = ['ad9be0b5d43f9e2aba895f3ede723aa1', 'c5efe10ef922d575908700ec15d7517f'];
+    var invitationCode = ['510e07be2d27ba618dc0a1461269736e'];
 
     /***************** Waypoints ******************/
 
@@ -175,10 +175,7 @@ $(document).ready(function () {
         if(MD5(ev.target.value) === invitationCode[0]) {
             // family
             $('#family-form').show();
-        } else if (MD5(ev.target.value) === invitationCode[1]) {
-            $('#family-form').show();
-            $('#plus-one-text').html('+1 fő');
-        } 
+        }
     });
 
     $('#has_kid_yes').on('input', function(ev) {
