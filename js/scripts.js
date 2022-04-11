@@ -220,8 +220,9 @@ function initroutes(){
 
     map = new google.maps.Map(
         document.getElementById("map-canvas"), {
-          center: new google.maps.LatLng(47.26752534042223, 19.326378217216437),
+          center: new google.maps.LatLng(46.205553, 20.1116823),
           zoom: 17,
+          mapTypeId: 'satellite',
           styles: [
             {
               featureType: "poi",
@@ -232,32 +233,10 @@ function initroutes(){
          ]
         });
 
-    var layer = new google.maps.KmlLayer({
-        url: "http://www.google.com/maps/d/kml?forcekml=1&mid=1-1qKsLPzOQnE7ypxN-d2eFCvSwvNElt3",
-        map: map,
-        preserveViewport: true,
-        suppressInfoWindows: true,
-      })
-
-    busStopMarker = new google.maps.Marker({
-        position: {lat:47.266564817461855, lng:19.324242639724826},
-        title: "Buszmegálló",
-        map: map
-    });
-
-    var locationIcon = {
-        path: "M639.4 433.6c-8.4-20.4-31.8-30.1-52.2-21.6l-22.1 9.2-38.7-101.9c47.9-35 64.8-100.3 34.5-152.8L474.3 16c-8-13.9-25.1-19.7-40-13.6L320 49.8 205.7 2.4c-14.9-6.2-32-.3-40 13.6L79.1 166.5C48.9 219 65.7 284.3 113.6 319.2L74.9 421.1l-22.1-9.2c-20.4-8.5-43.7 1.2-52.2 21.6-1.7 4.1.2 8.8 4.3 10.5l162.3 67.4c4.1 1.7 8.7-.2 10.4-4.3 8.4-20.4-1.2-43.8-21.6-52.3l-22.1-9.2L173.3 342c4.4.5 8.8 1.3 13.1 1.3 51.7 0 99.4-33.1 113.4-85.3l20.2-75.4 20.2 75.4c14 52.2 61.7 85.3 113.4 85.3 4.3 0 8.7-.8 13.1-1.3L506 445.6l-22.1 9.2c-20.4 8.5-30.1 31.9-21.6 52.3 1.7 4.1 6.4 6 10.4 4.3L635.1 444c4-1.7 6-6.3 4.3-10.4zM275.9 162.1l-112.1-46.5 36.5-63.4 94.5 39.2-18.9 70.7zm88.2 0l-18.9-70.7 94.5-39.2 36.5 63.4-112.1 46.5z",
-        fillColor: '#E32831',
-        fillOpacity: 1,
-        strokeWeight: 0,
-        scale: 0.08
-    }
-
     new google.maps.Marker({
-        position: {lat:47.267270182228025, lng: 19.325614256717614},
+        position: {lat:46.20568997415379, lng: 20.11420801869239},
         title: "Esküvő",
         map: map,
-        icon:locationIcon
     });
 }
 
