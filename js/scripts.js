@@ -127,7 +127,7 @@ $(document).ready(function () {
         });
     });
 
-    var cards = [ $('#map-car-content'),  $('#map-bus-content'), $('#map-content'), $('#map-helicopter-content')];
+    var cards = [ $('#map-car-content'),  $('#map-bus-content'), $('#map-content')];
     function hideAllcard() {
         cards.map(function(card){
             card.removeClass('show');
